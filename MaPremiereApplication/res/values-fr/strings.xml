@@ -1,0 +1,5 @@
+<resources>
+
+    <string name="anais">Bonjour %1$s, vous avez %2$d ans</string>
+
+</resources>

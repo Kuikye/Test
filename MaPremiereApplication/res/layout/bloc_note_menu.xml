@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    
+    <Button 
+        android:id="@+id/btn_gras"
+        android:layout_width="wrap_content"
+    	android:layout_height="wrap_content"
+    	style="@style/option_button"
+    	android:layout_marginTop="10dp"
+    	android:layout_marginLeft="10dp"
+    	android:text="@string/gras" />
+    
+    <Button 
+        android:id="@+id/btn_ital"
+        android:layout_width="wrap_content"
+    	android:layout_height="wrap_content"
+    	android:layout_centerHorizontal="true"
+    	android:layout_marginTop="10dp"
+    	style="@style/option_button"
+    	android:text="@string/ital"/>
+    
+    <Button 
+        android:id="@+id/btn_soul"
+        android:layout_width="wrap_content"
+    	android:layout_height="wrap_content"
+    	android:layout_alignParentRight="true"
+    	android:layout_marginTop="10dp"
+    	style="@style/option_button"
+    	android:layout_marginRight="10dp"
+    	android:text="@string/soul"/>
+
+    <TextView 
+        android:id="@+id/smileys"
+        android:layout_width="wrap_content"
+    	android:layout_height="wrap_content"
+    	android:layout_below="@id/btn_gras"
+    	android:layout_marginTop="10dp"
+    	android:text="@string/smileys"/>
+    
+    <ImageButton 
+        android:id="@+id/smiley1"
+        android:layout_width="wrap_content"
+    	android:layout_height="wrap_content"
+    	android:layout_alignBottom="@id/smileys"
+    	android:layout_toRightOf="@id/smileys"
+    	android:paddingLeft="5dp"
+    	style="@style/smiley_button"
+    	android:src="@drawable/smiley1"
+    	android:contentDescription="@string/smiley1"/>
+    
+    <ImageButton
+        android:id="@+id/smiley2"
+        android:layout_width="wrap_content"
+    	android:layout_height="wrap_content"
+    	android:layout_alignBottom="@id/smileys"
+    	android:layout_centerHorizontal="true"
+    	style="@style/smiley_button"
+    	android:src="@drawable/smiley2"
+    	android:contentDescription="@string/smiley2"/>
+    
+    <ImageButton
+        android:id="@+id/smiley3"
+        android:layout_width="wrap_content"
+    	android:layout_height="wrap_content"
+    	android:layout_alignBottom="@id/smileys"
+    	android:layout_alignParentRight="true"
+    	style="@style/smiley_button"
+    	android:paddingRight="15dp"
+    	android:src="@drawable/smiley3"
+    	android:contentDescription="@string/smiley3"/>
+    
+    <RadioGroup
+        android:id="@+id/group"
+        android:layout_width="match_parent"
+    	android:layout_height="wrap_content"
+    	android:layout_below="@id/smileys"
+    	android:layout_marginTop="10dp"
+    	android:orientation="horizontal" >
+        <RadioButton 
+            android:id="@+id/btn1"
+            android:text="@string/noir"
+            android:checked="true"/>
+        <RadioButton 
+            android:id="@+id/btn2"
+            android:text="@string/bleu"/>
+        <RadioButton 
+            android:id="@+id/btn3"
+            android:text="@string/rouge"/>
+    </RadioGroup>
+</RelativeLayout>

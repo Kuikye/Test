@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.test.mapremiereapplication.BlocNoteLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#99CCFF"
+    android:id="@+id/layout" >
+
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/menuLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <Button
+            android:id="@+id/btn_gras"
+            style="@style/option_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:text="@string/gras" />
+
+        <Button
+            android:id="@+id/btn_ital"
+            style="@style/option_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:text="@string/ital" />
+
+        <Button
+            android:id="@+id/btn_soul"
+            style="@style/option_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:text="@string/soul" />
+
+        <TextView
+            android:id="@+id/smileys"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/btn_gras"
+            android:layout_marginTop="10dp"
+            android:text="@string/smileys" />
+
+        <ImageButton
+            android:id="@+id/smiley1"
+            style="@style/smiley_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/smileys"
+            android:layout_toRightOf="@id/smileys"
+            android:contentDescription="@string/smiley1"
+            android:paddingLeft="5dp"
+            android:src="@drawable/smiley1" />
+
+        <ImageButton
+            android:id="@+id/smiley2"
+            style="@style/smiley_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/smileys"
+            android:layout_centerHorizontal="true"
+            android:contentDescription="@string/smiley2"
+            android:src="@drawable/smiley2" />
+
+        <ImageButton
+            android:id="@+id/smiley3"
+            style="@style/smiley_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/smileys"
+            android:layout_alignParentRight="true"
+            android:contentDescription="@string/smiley3"
+            android:paddingRight="15dp"
+            android:src="@drawable/smiley3" />
+
+        <RadioGroup
+            android:id="@+id/group"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/smileys"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal" >
+
+            <RadioButton
+                android:id="@+id/btn1"
+                android:checked="true"
+                android:text="@string/noir" />
+
+            <RadioButton
+                android:id="@+id/btn2"
+                android:text="@string/bleu" />
+
+            <RadioButton
+                android:id="@+id/btn3"
+                android:text="@string/rouge" />
+        </RadioGroup>
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/btn_hide"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/carre_vert"
+        android:text="@string/cacher" />
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/divider"
+        android:paddingBottom="2dp"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:paddingTop="2dp"
+        android:scaleType="fitXY"
+        android:src="@android:drawable/divider_horizontal_textfield" />
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:shrinkColumns="1" >
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="@string/edit" />
+
+            <EditText
+                android:id="@+id/edition"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textMultiLine"
+                android:lines="5"
+                android:gravity="top"
+                android:background="#FFFFFF"
+                android:layout_marginRight="3dp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <TextView 
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="@string/prev" />
+
+            <TextView 
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/prev" />
+        </TableRow>
+
+                <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="                                                                 " />
+        </TableRow>
+
+    </TableLayout>
+
+</com.test.mapremiereapplication.BlocNoteLayout>

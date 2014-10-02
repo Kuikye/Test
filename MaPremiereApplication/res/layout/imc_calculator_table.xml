@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:stretchColumns="1" >
+    
+    <TableRow >
+        <TextView
+            android:gravity="center"
+            android:text="@string/weight"
+            android:textColor="#FF0000"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/poids"
+            android:hint="@string/weight"
+            android:inputType="numberDecimal"
+            android:layout_span="2" />
+    </TableRow>
+    
+    <TableRow >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/size"
+            android:textColor="#FF0000"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/taille"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="@string/size"
+            android:inputType="numberDecimal"
+            android:layout_span="2" />
+    </TableRow>
+    
+    <RadioGroup 
+	    android:id="@+id/group"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:orientation="horizontal"
+	    android:checkedButton="@+id/radio2">
+	    <RadioButton
+	        android:id="@+id/radio1"
+	        android:layout_width="wrap_content"
+	    	android:layout_height="wrap_content"
+	    	android:text="@string/meter" />
+	    <RadioButton
+	        android:id="@+id/radio2"
+	        android:layout_width="wrap_content"
+	    	android:layout_height="wrap_content"
+	    	android:text="@string/centimeter" />
+	</RadioGroup>
+	
+    <CheckBox 
+	    android:id="@+id/mega"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:text="@string/mega_function"/>
+    
+    <TableRow >
+        <Button
+	        android:id="@+id/calcul"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="@string/calculate" />
+
+	    <Button
+	        android:id="@+id/raz"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="@string/raz"
+	        android:layout_column="2" />
+    </TableRow>
+    
+    <TextView 
+	    android:text="@string/result"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:textSize="12sp"/>
+	
+	<TextView 
+	    android:id="@+id/result"
+	    android:text="@string/default_result"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content" />
+
+</TableLayout>
